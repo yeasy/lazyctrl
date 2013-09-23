@@ -1,9 +1,12 @@
 # Object files
 *.o
+*.lo
+*.ko
 
 # Libraries
 *.lib
 *.a
+*.la
 
 # Shared objects (inc. Windows DLLs)
 *.dll
@@ -19,13 +22,23 @@
 
 # Temporal files
 *~
+*.mod.c
+*.cmd
 *.class
 .classpath
+cscope.*
+.coverage
+.deps
+.dirstamp
+.libs
+.tmp_verions
 .project
 .pydevproject
 .settings
 .DS_Store
+Module.symvers
 target
+tags
 thrift
 *.swp
 *.pyc
