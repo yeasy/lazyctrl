@@ -37,13 +37,15 @@ os.chdir("tmp")
 #cp remote file to local 
 os.system("scp %s@%s:%s ./%s 2>&1 > /dev/null" %(user,remotehost,remotefile,tmpfile))
 os.system("sort -n %s |uniq > %s" %(tmpfile,localfile))
+os.system("sed -i 's/$/\ %s/g' %s" %(remotehost, localfile))
 os.system("cp %s %s" %(localfile,bakfile))
 
-nLoop = 3
+nLoop = 9999
 while nLoop > 0:
     os.system("rm -f %s" %(difffile))
     os.system("scp %s@%s:%s ./%s 2>&1 > /dev/null" %(user,remotehost,remotefile,tmpfile))
     os.system("sort -n %s |uniq > %s" %(tmpfile,localfile))
+    os.system("sed -i 's/$/\ %s/g' %s" %(remotehost, localfile))
     os.system("diff %s %s > %s" %(localfile,bakfile,difffile))
     f = file(difffile)
     line  = f.readline();

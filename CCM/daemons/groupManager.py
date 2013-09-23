@@ -36,7 +36,7 @@ def doGroup(fn_cpu="/tmp/cpus.dat",fn_stat="/tmp/lc_stats.dat", fn_to_group="/tm
     new_num_group=num_group
 
     try:
-        for line in fileinput.input([fn_stat]):
+        for line in fileinput.input([fn_stat]): #statistics
             num_flow += 1
             src, dst, w = line.split()
             src, dst, w = int(src), int(dst), int(w)
@@ -50,11 +50,35 @@ def doGroup(fn_cpu="/tmp/cpus.dat",fn_stat="/tmp/lc_stats.dat", fn_to_group="/tm
         print " %d records are read, with %d switches [%d,%d], flows=%d"\
                 %(num_flow,len(swSet),min(swSet),max(swSet),sum([num_flow for num_flow in flowDic.values()]))
         for line in fileinput.input([fn_cpu]): #some sw are complaining
+            cpu, host = line.split()
+            cpu = int(cpu)
             num_cpu += 1
-        new_num_group = num_group/(1.0+float(num_cpu)/len(swSet)) #other principles can be utilized here
+            
+        new_num_group = int(num_group/(1.0+float(num_cpu)/len(swSet)))
         if new_num_group != num_group:
-            os.system("%s -ncuts=4 -ufactor=1.1 -niter=20 %s %u >> group_result.summary" %(PROG_CUT,fn_to_group,new_num_group))
-            os.system("cp %s /tmp/group_result.dat" %(fn_to_group+".part."+repr(new_num_group)))
+            if True:#one method is to regroup into new number of groups
+                os.system("%s -ncuts=4 -ufactor=1.1 -niter=20 %s %u >> group_result.summary" %(PROG_CUT,fn_to_group,new_num_group))
+                os.system("cp %s /tmp/group_result.dat" %(fn_to_group+".part."+repr(new_num_group)))
+            else: #another method is to incremental group
+                dcm_list = []
+                gid_result = []
+                sw_update = []
+                for line in fileinput.input(["dcm_ip.list"]):
+                    dcm_list.append(line.strip("\n"))
+                for line in fileinput.input(["/tmp/group_result.dat"]):
+                    gid = int(line.strip("\n"))
+                    gid_result.append(gid)
+                max_gid = max(gid_result)
+                if host in dcm_list:
+                    host_id = dcm_list.index(host)
+                    gid = gid_result[host_id] #the current group
+                    for i in range(len(gid_result)): #affected sws
+                        if gid == gid_result[i]:
+                            sw_update.append(i)
+                    for i in range(len(sw_update)/2): #optimize the selection in future
+                        os.system("sed -i '%ds/.*/%d/' %s" %(i,max_gid+1,"/tmp/group_result.dat"))
+                else: #unknown host
+                    pass
     finally:
         f_out.close()
     return new_num_group
@@ -64,22 +88,20 @@ def doPush():
     dcm_list = []
     ddcm_list = []
     for line in fileinput.input(["dcm_ip.list"]):
-        dcm_list.append(line)
+        dcm_list.append(line.strip("\n"))
     for line in fileinput.input(["ddcm_ip.list"]):
-        ddcm_list.append(line)
+        ddcm_list.append(line.strip("\n"))
     i = 0
     for line in fileinput.input(["/tmp/group_result.dat"]):
+        gid = int(line.strip("\n"))
         ip = dcm_list[i]
-        gid = int(gid)
-        if ip in ddcm_list: #ddcm should push with flag 1
+        if ip in ddcm_list: #ddcm should push with flag 1, ddcm is also a dcm
             msg = repr(gid)+" "+"1"
         else:
             msg = repr(gid)+" "+"0"
         os.system("python ./push_agent.py %s %s" %(ip,msg))
         i += 1
     pass
-    
-
     
 if __name__ == "__main__":
     """

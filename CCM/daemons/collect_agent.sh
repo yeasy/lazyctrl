@@ -30,6 +30,6 @@ do
     rm -f /tmp/lc_stats.dat
     find tmp -type f -name '*_cpu.dat' -exec cat {} \; >/tmp/cpus.dat
     find tmp -type f -name '*_lc_stat.dat' -exec cat {} \; >>/tmp/lc_stats.dat
-    #call grouping here
+    # do grouping
     sleep 5
 done
