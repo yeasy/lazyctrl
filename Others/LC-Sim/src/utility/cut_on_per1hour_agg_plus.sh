@@ -1,0 +1,26 @@
+
+echo "Generate the metis_input file for cutting."
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_00.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_0.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_01.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_1.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_02.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_2.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_03.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_3.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_04.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_4.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_05.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_5.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_06.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_6.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_07.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_7.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_08.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_8.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_09.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_9.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_10.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_10.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_11.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_11.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_12.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_12.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_13.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_13.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_14.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_14.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_15.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_15.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_16.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_16.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_17.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_17.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_18.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_18.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_19.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_19.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_20.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_20.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_21.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_21.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_22.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_22.txt
+./cut.py -m kcut -i ../result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_23.sw_affinity.txt -o ../result/metis_result/input_6509_plus_1hour/metis_input_6509_plus_23.txt

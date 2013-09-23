@@ -1,0 +1,384 @@
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_0.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_00.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_00.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 4890 #groups = 5
+average_focus= 0.683331548614
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1522, Original_to_controller= 956001, Current_to_controller = 128249
+TP = 827752, TN = 128249, FP = 0
+[Flow] local_switch = 1522, within the group = 827752,across groups = 128249
+[Traffic] local_switch = 426577 byte, within the group = 9766824486 byte,across groups = 1009846112 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_1.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_01.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_01.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3935 #groups = 5
+average_focus= 0.656691810231
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2063, Original_to_controller= 879661, Current_to_controller = 111935
+TP = 767726, TN = 111935, FP = 0
+[Flow] local_switch = 2063, within the group = 767726,across groups = 111935
+[Traffic] local_switch = 447634 byte, within the group = 10137737584 byte,across groups = 1505710582 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_2.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_02.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_02.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3902 #groups = 5
+average_focus= 0.813243788742
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1344, Original_to_controller= 1184018, Current_to_controller = 120746
+TP = 1063272, TN = 120746, FP = 0
+[Flow] local_switch = 1344, within the group = 1063272,across groups = 120746
+[Traffic] local_switch = 378941 byte, within the group = 8416085231 byte,across groups = 4947015115 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_3.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_03.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_03.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3720 #groups = 5
+average_focus= 0.637375565366
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1359, Original_to_controller= 868178, Current_to_controller = 122396
+TP = 745782, TN = 122396, FP = 0
+[Flow] local_switch = 1359, within the group = 745782,across groups = 122396
+[Traffic] local_switch = 381121 byte, within the group = 8317231328 byte,across groups = 1046590797 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_4.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_04.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_04.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3398 #groups = 5
+average_focus= 0.617386072023
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1820, Original_to_controller= 799146, Current_to_controller = 112075
+TP = 687071, TN = 112075, FP = 0
+[Flow] local_switch = 1820, within the group = 687071,across groups = 112075
+[Traffic] local_switch = 591973 byte, within the group = 26005194572 byte,across groups = 1380523094 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_5.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_05.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_05.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3244 #groups = 5
+average_focus= 0.609206860081
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1484, Original_to_controller= 784080, Current_to_controller = 110214
+TP = 673866, TN = 110214, FP = 0
+[Flow] local_switch = 1484, within the group = 673866,across groups = 110214
+[Traffic] local_switch = 447040 byte, within the group = 7805285406 byte,across groups = 1405735705 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_6.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_06.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_06.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3554 #groups = 5
+average_focus= 0.667458721085
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1740, Original_to_controller= 893725, Current_to_controller = 116515
+TP = 777210, TN = 116515, FP = 0
+[Flow] local_switch = 1740, within the group = 777210,across groups = 116515
+[Traffic] local_switch = 476736 byte, within the group = 8783034906 byte,across groups = 1126735639 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_7.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_07.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_07.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 3279 #groups = 5
+average_focus= 0.655680926538
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2266, Original_to_controller= 874597, Current_to_controller = 116354
+TP = 758243, TN = 116354, FP = 0
+[Flow] local_switch = 2266, within the group = 758243,across groups = 116354
+[Traffic] local_switch = 658242 byte, within the group = 9128662648 byte,across groups = 1316247740 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_8.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_08.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_08.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5610 #groups = 5
+average_focus= 0.548294549099
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2582, Original_to_controller= 1174906, Current_to_controller = 250403
+TP = 924503, TN = 250403, FP = 0
+[Flow] local_switch = 2582, within the group = 924503,across groups = 250403
+[Traffic] local_switch = 757659 byte, within the group = 9955103781 byte,across groups = 1916818213 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_9.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_09.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_09.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 4837 #groups = 5
+average_focus= 0.568445243955
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2606, Original_to_controller= 1420157, Current_to_controller = 271427
+TP = 1148730, TN = 271427, FP = 0
+[Flow] local_switch = 2606, within the group = 1148730,across groups = 271427
+[Traffic] local_switch = 2419073 byte, within the group = 15014148492 byte,across groups = 16235598553 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_10.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_10.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_10.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 4286 #groups = 5
+average_focus= 0.504001111174
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2183, Original_to_controller= 1523961, Current_to_controller = 281178
+TP = 1242783, TN = 281178, FP = 0
+[Flow] local_switch = 2183, within the group = 1242783,across groups = 281178
+[Traffic] local_switch = 622737 byte, within the group = 15623598660 byte,across groups = 2074465423 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_11.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_11.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_11.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5553 #groups = 5
+average_focus= 0.554086013225
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 1803, Original_to_controller= 1643204, Current_to_controller = 292102
+TP = 1351102, TN = 292102, FP = 0
+[Flow] local_switch = 1803, within the group = 1351102,across groups = 292102
+[Traffic] local_switch = 639804 byte, within the group = 18269105905 byte,across groups = 1494416374 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_12.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_12.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_12.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 4824 #groups = 5
+average_focus= 0.575675813523
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2783, Original_to_controller= 1714804, Current_to_controller = 292772
+TP = 1422032, TN = 292772, FP = 0
+[Flow] local_switch = 2783, within the group = 1422032,across groups = 292772
+[Traffic] local_switch = 768810 byte, within the group = 19351111111 byte,across groups = 1675969940 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_13.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_13.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_13.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 4885 #groups = 5
+average_focus= 0.575938348156
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 2966, Original_to_controller= 1708573, Current_to_controller = 289388
+TP = 1419185, TN = 289388, FP = 0
+[Flow] local_switch = 2966, within the group = 1419185,across groups = 289388
+[Traffic] local_switch = 691199 byte, within the group = 21500146618 byte,across groups = 1347009062 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_14.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_14.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_14.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 4814 #groups = 5
+average_focus= 0.533826454575
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 3754, Original_to_controller= 1749682, Current_to_controller = 305555
+TP = 1444127, TN = 305555, FP = 0
+[Flow] local_switch = 3754, within the group = 1444127,across groups = 305555
+[Traffic] local_switch = 708663 byte, within the group = 21066673554 byte,across groups = 1822441717 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_15.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_15.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_15.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5157 #groups = 5
+average_focus= 0.531938388241
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 3578, Original_to_controller= 1762454, Current_to_controller = 304912
+TP = 1457542, TN = 304912, FP = 0
+[Flow] local_switch = 3578, within the group = 1457542,across groups = 304912
+[Traffic] local_switch = 444221 byte, within the group = 21222968148 byte,across groups = 2015861941 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_16.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_16.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_16.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 6067 #groups = 5
+average_focus= 0.472498945209
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 5484, Original_to_controller= 2403132, Current_to_controller = 675032
+TP = 1728100, TN = 675032, FP = 0
+[Flow] local_switch = 5484, within the group = 1728100,across groups = 675032
+[Traffic] local_switch = 459550 byte, within the group = 23982553286 byte,across groups = 4213592901 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_17.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_17.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_17.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5826 #groups = 5
+average_focus= 0.469480139993
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 4302, Original_to_controller= 2440133, Current_to_controller = 683834
+TP = 1756299, TN = 683834, FP = 0
+[Flow] local_switch = 4302, within the group = 1756299,across groups = 683834
+[Traffic] local_switch = 464434 byte, within the group = 25214098501 byte,across groups = 2913170546 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_18.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_18.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_18.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5771 #groups = 5
+average_focus= 0.481457749051
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 4519, Original_to_controller= 2383042, Current_to_controller = 666430
+TP = 1716612, TN = 666430, FP = 0
+[Flow] local_switch = 4519, within the group = 1716612,across groups = 666430
+[Traffic] local_switch = 442792 byte, within the group = 24377656870 byte,across groups = 3526521881 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_19.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_19.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_19.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5891 #groups = 5
+average_focus= 0.467984532731
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 6490, Original_to_controller= 2317269, Current_to_controller = 656363
+TP = 1660906, TN = 656363, FP = 0
+[Flow] local_switch = 6490, within the group = 1660906,across groups = 656363
+[Traffic] local_switch = 498122 byte, within the group = 22525595275 byte,across groups = 3345890490 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_20.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_20.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_20.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5941 #groups = 5
+average_focus= 0.476620470097
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 16563, Original_to_controller= 2258885, Current_to_controller = 649899
+TP = 1608986, TN = 649899, FP = 0
+[Flow] local_switch = 16563, within the group = 1608986,across groups = 649899
+[Traffic] local_switch = 1533104 byte, within the group = 22300410078 byte,across groups = 2026218612 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_21.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_21.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_21.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5603 #groups = 5
+average_focus= 0.488909757214
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 9304, Original_to_controller= 2123613, Current_to_controller = 608462
+TP = 1515151, TN = 608462, FP = 0
+[Flow] local_switch = 9304, within the group = 1515151,across groups = 608462
+[Traffic] local_switch = 877826 byte, within the group = 20057585472 byte,across groups = 2692115462 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_22.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_22.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_22.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5502 #groups = 5
+average_focus= 0.484155556744
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 6481, Original_to_controller= 2012236, Current_to_controller = 586057
+TP = 1426179, TN = 586057, FP = 0
+[Flow] local_switch = 6481, within the group = 1426179,across groups = 586057
+[Traffic] local_switch = 973006 byte, within the group = 17845441390 byte,across groups = 2180467419 byte
+readin sw-group mapping information.
+read in switch-group mapping info from file ./result/metis_result/partition_6509_plus_per1hour/metis_input_6509_plus_23.txt.part.5
+readin host-sw mapping information.
+read in vm-switch info from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_23.host_sw_map.txt
+readin trace file.
+Test the flow record from file ./result/traffic_record_per1hour/6509_agg_plus/flow_anon_2008-01-01_23.agg.txt
+>>[DC Info]:
+#switches = 272, core = 0, agg = 0, edge = 272
+#hosts = 5605 #groups = 5
+average_focus= 0.468580562783
+average_H= 0.430676558073
+>>[Stat Information]:
+[Queries] Arp = 3843, Original_to_controller= 1718282, Current_to_controller = 518662
+TP = 1199620, TN = 518662, FP = 0
+[Flow] local_switch = 3843, within the group = 1199620,across groups = 518662
+[Traffic] local_switch = 491389 byte, within the group = 13097951539 byte,across groups = 1413267859 byte

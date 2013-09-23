@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AFFINITY_FILE	Makefile	/^AFFINITY_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts.sw_affinity.txt$/;"	m
+AFFINITY_RANDOM_FILE	Makefile	/^AFFINITY_RANDOM_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_RANDOM_HOST}hosts_random.sw_affinity.txt$/;"	m
+AFFINITY_SCALE_FILE	Makefile	/^AFFINITY_SCALE_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts_scale.sw_affinity.txt$/;"	m
+AFFINITY_SCALE_FILE2	Makefile	/^AFFINITY_SCALE_FILE2=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts_scale2.sw_affinity.txt$/;"	m
+AFFINITY_SCALE_FILE3	Makefile	/^AFFINITY_SCALE_FILE3=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts_scale3.sw_affinity.txt$/;"	m
+AGG_FILE	Makefile	/^AGG_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts.agg.txt$/;"	m
+AGG_RANDOM_FILE	Makefile	/^AGG_RANDOM_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_RANDOM_HOST}hosts_random.agg.txt$/;"	m
+AGG_SCALE_FILE	Makefile	/^AGG_SCALE_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts_scale.agg.txt$/;"	m
+AGG_SCALE_FILE2	Makefile	/^AGG_SCALE_FILE2=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts_scale2.agg.txt$/;"	m
+AGG_SCALE_FILE3	Makefile	/^AGG_SCALE_FILE3=..\/result\/traffic_record_1day\/flow_anon_2008-01-01_${NUM_HOST}hosts_scale3.agg.txt$/;"	m
+CUT	Makefile	/^CUT=.\/cut.py$/;"	m
+Cut	cut.py	/^class Cut:$/;"	c
+METIS_INPUT	Makefile	/^METIS_INPUT=..\/result\/metis_result\/metis_input_${NUM_HOST}.txt$/;"	m
+METIS_INPUT_RANDOM	Makefile	/^METIS_INPUT_RANDOM=..\/result\/metis_result\/metis_input_${NUM_RANDOM_HOST}hosts_random.txt$/;"	m
+METIS_INPUT_SCALE	Makefile	/^METIS_INPUT_SCALE=..\/result\/metis_result\/metis_input_${NUM_HOST}hosts_scale.txt$/;"	m
+METIS_INPUT_SCALE2	Makefile	/^METIS_INPUT_SCALE2=..\/result\/metis_result\/metis_input_${NUM_HOST}hosts_scale2.txt$/;"	m
+METIS_INPUT_SCALE3	Makefile	/^METIS_INPUT_SCALE3=..\/result\/metis_result\/metis_input_${NUM_HOST}hosts_scale3.txt$/;"	m
+NUM_HOST	Makefile	/^NUM_HOST=6509$/;"	m
+NUM_RANDOM_HOST	Makefile	/^NUM_RANDOM_HOST=65000$/;"	m
+NUM_SW_PORT	preprocess.py	/^NUM_SW_PORT = 24$/;"	v
+PREPROCESS	Makefile	/^PREPROCESS=.\/preprocess.py$/;"	m
+PROG_CUT	cut.py	/^PROG_CUT = '.\/mincut'$/;"	v
+RECORD_FILE	Makefile	/^RECORD_FILE=..\/result\/traffic_record_1day\/flow_anon_2008-01-01.record.txt$/;"	m
+__init__	cut.py	/^    def __init__(self):$/;"	m	class:Cut
+aggregateRecord	preprocess.py	/^def aggregateRecord(fn_in, fn_out):$/;"	f
+bcut	cut.py	/^    def bcut(self, node_set):$/;"	m	class:Cut
+c	cut.py	/^    c = Cut()$/;"	v	class:Cut
+doCount	countPkt.py	/^def doCount(fn):$/;"	f
+extractRecordFromTrace	preprocess.py	/^def extractRecordFromTrace(fn_in, fn_out):$/;"	f
+fn_in	countPkt.py	/^    fn_in = "..\/result\/traffic_record_per1hour"$/;"	v
+genAffinityFile	cut.py	/^    def genAffinityFile(self, num_node=10, num_entry=100, max_weight=100, fn_out="test_affinity.txt"):$/;"	m	class:Cut
+genRandomAgg	preprocess.py	/^def genRandomAgg(num_host, fn_out):$/;"	f
+genSWAffinity	preprocess.py	/^def genSWAffinity(fn_in="host_flow_oct.agg.txt", fn_affinity="sw_affinity.txt",fn_map="host_sw_map.txt",num_host=6509):$/;"	f
+getFlowId	preprocess.py	/^def getFlowId(max_id):$/;"	f
+getFocus	preprocess.py	/^def getFocus(fn_in="sw_affinity.txt"):$/;"	f
+help	preprocess.py	/^                      metavar="MODE")$/;"	v
+help	preprocess.py	/^            help="number of hosts")$/;"	v
+kcut	cut.py	/^    def kcut(self, fn_in="sw_undirectional_affinity.txt", fn_metics="metis_input.txt"):$/;"	m	class:Cut
+parser	cut.py	/^    parser = OptionParser(usage="usage: %prog [-i FILE][-o FILE][-m KCUT|BCUT|GEN]", version="%prog 1.0")$/;"	v	class:Cut
+parser	preprocess.py	/^    parser = OptionParser(usage="Usage: %prog [-i FILE][-o FILE][-n NUM][-m EXTRACT|AGG|AFFINITY|FOCUS|SCALE|RANDOM]", version="%prog 1.0")$/;"	v
+parser	processMetisOutput.py	/^    parser = OptionParser(usage="Usage: %prog [-i FILE][-o FILE]", version="%prog 1.0")$/;"	v
+processMetisPartition	processMetisOutput.py	/^def processMetisPartition(fn_in, fn_out):$/;"	f
+scaleData	preprocess.py	/^def scaleData(fn_in="host.seed.agg.txt", fn_out="host.scale.agg.txt",scale=10):$/;"	f
