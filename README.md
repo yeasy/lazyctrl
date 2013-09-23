@@ -42,9 +42,9 @@ A test platform to check the functions of grouping algorithm, large-scale perfor
 ####Sample Testbed:
 ![ScreenShot](Others/testbed.png)
 
-* Three edge switches instances are connected through a physical switch (IP communicable), and are connected to the controller.
-* Deploy DCM at every edge switches (DCM 1 - DCM 3), following the installation documents inside. Modify the address information as necessary. For example, control layer IP of DCM 1 is ```192.168.57.10```, while for DCM 2, the IP is ```192.168.57.11```.
-* Start floodlight-lc  in CCM to receive PACKETIN msg, start the group manager daemons to collect upward statistics.
+* Three edge switch instances (belonging to two groups) are connected through a physical switch (IP communicable), and are connected to the CCM.
+* Deploy the DCM code at every edge switches (DCM 1 - DCM 3), following the installation documents inside. Modify the address information as necessary. For example, the default control layer IP of DCM 1 is ```192.168.57.10```, while for DCM 2, the IP is ```192.168.57.11```. Start the agent daemon.
+* Start floodlight-lc  in CCM to receive PACKET_IN msg, start the group manager daemons to collect upward statistics.
 
 ## How does it work?
 Basically, the floodlight-lc+openvswitch-lc cooperate as the basic control-datapath model in SDN. Based on them, we enhanced openvswitch-lc+agent to behave as DCM/DDCM, while floodlight-lc+daemons work as the CCM. More details are discussed in the paper, e.g., the group maintain algorithm and the implementation technical issues.
