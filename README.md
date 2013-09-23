@@ -3,7 +3,7 @@ The LazyCtrl project
 *Self-adaptive performance-tunning control architecture for SDN networks*
 
 * Version: 0.21
-* Authors: Baohua Yang <mailto:baohyang@cn.ibm.com>, Kai Zheng <mailto:zhengkai@cn.ibm.com>
+* Authors: [Baohua Yang](mailto:baohyang@cn.ibm.com), [Kai Zheng](mailto:zhengkai@cn.ibm.com)
 * Homepage: <https://github.com/yeasy/lazyctrl>
 
 ##Get Code
@@ -18,10 +18,10 @@ git clone https://github.com/yeasy/lazyctrl.git
 ## Code Organization
 
 ### CCM
-CCM directory includes the related code of a CCM module. CCM designs the SDN controller platform (floodlight-lc) based on [floodlight project](http://www.projectfloodlight.org/floodlight). Our app runs over floodlight-lc to handle cross-group traffic request. Daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs.
+CCM directory includes the related code of a CCM module. CCM designs the SDN controller platform (floodlight-lc) based on [floodlight](http://www.projectfloodlight.org/floodlight) project. Our app runs over floodlight-lc to handle cross-group traffic request. Daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs.
 
 ### DCM
-DCM includes two parts: openvswitch-lc and agent daemon. The openvswitch-lc is designed based on the OpenvSwitch code. Specific agent daemon is run at DCM to report its state. Also, some DCM is designated as a DDCM for every group. 
+DCM includes two parts: openvswitch-lc and agent daemon. The openvswitch-lc is designed based on the [OpenvSwitch](http://openvswitch.org) project. Specific agent daemon is run at DCM to report its state. Also, some DCM is designated as a DDCM for every group. 
 
 ###Others
 A test platform to check the functions of grouping algorithm, large-scale performance, etc.
