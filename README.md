@@ -26,7 +26,7 @@ Enviroment that can normally
 * Support openvswitch (see <http://openvswitch.org>).
 * Support Floodlight (see <http://www.projectfloodlight.org/floodlight>).
 * Physical switches that support multi-cast.
-* Server (as controller) can login into the servers (as edge switches) running ovs via ssh without authorization (Need to put the public authorization key previously).
+* Server (as controller) can login into the servers (as edge switches, with 2 separate network interfaces) running ovs via ssh without authorization (Need to put the public authorization key previously).
 
 ####Sample Testbed:
 ![ScreenShot](Others/testbed.png)

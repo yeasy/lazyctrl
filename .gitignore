@@ -15,3 +15,18 @@
 *.exe
 *.out
 *.app
+
+
+# Temporal files
+*~
+*.class
+.classpath
+.project
+.pydevproject
+.settings
+.DS_Store
+target
+thrift
+*.swp
+*.pyc
+findbugs-results
