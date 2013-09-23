@@ -49,9 +49,9 @@ def doGroup(fn_cpu="/tmp/cpus.dat",fn_stat="/tmp/lc_stats.dat", fn_to_group="/tm
             f_out.write("%u %u %u\n" % (k[0], k[1], flowDic[k]))
         print " %d records are read, with %d switches [%d,%d], flows=%d"\
                 %(num_flow,len(swSet),min(swSet),max(swSet),sum([num_flow for num_flow in flowDic.values()]))
+        sw_comp = ""
         for line in fileinput.input([fn_cpu]): #some sw are complaining
-            cpu, host = line.split()
-            cpu = int(cpu)
+            cpu, sw_comp = line.split()
             num_cpu += 1
             
         new_num_group = int(num_group/(1.0+float(num_cpu)/len(swSet)))
@@ -69,15 +69,15 @@ def doGroup(fn_cpu="/tmp/cpus.dat",fn_stat="/tmp/lc_stats.dat", fn_to_group="/tm
                     gid = int(line.strip("\n"))
                     gid_result.append(gid)
                 max_gid = max(gid_result)
-                if host in dcm_list:
-                    host_id = dcm_list.index(host)
-                    gid = gid_result[host_id] #the current group
+                if sw_comp in dcm_list:
+                    sw_id = dcm_list.index(sw_comp)
+                    gid = gid_result[sw_id] #the current group
                     for i in range(len(gid_result)): #affected sws
                         if gid == gid_result[i]:
                             sw_update.append(i)
                     for i in range(len(sw_update)/2): #optimize the selection in future
                         os.system("sed -i '%ds/.*/%d/' %s" %(i,max_gid+1,"/tmp/group_result.dat"))
-                else: #unknown host
+                else: #unknown sw
                     pass
     finally:
         f_out.close()
