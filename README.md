@@ -18,10 +18,14 @@ git clone https://github.com/yeasy/lazyctrl.git
 ## Code Organization
 
 ### CCM
-CCM directory includes the related code of a CCM module. CCM designs the SDN controller platform (floodlight-lc) based on [floodlight](http://www.projectfloodlight.org/floodlight) project. Our app runs over floodlight-lc to handle cross-group traffic request. Daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs.
+CCM directory includes the related code of a CCM module. CCM designs the SDN controller platform (floodlight-lc) based on the [floodlight](http://www.projectfloodlight.org/floodlight) project. floodlight-lc supports an enhanced version of [OpenFlow 1.0](http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf) protocol (We add code to support packetRemote action, which will encapsulate packet and send to remote end.). Besides, our app runs over floodlight-lc to handle cross-group traffic request. 
+
+Some daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs.
 
 ### DCM
-DCM includes two parts: openvswitch-lc and agent daemon. The openvswitch-lc is designed based on the [OpenvSwitch](http://openvswitch.org) project. Specific agent daemon is run at DCM to report its state. Also, some DCM is designated as a DDCM for every group. 
+DCM includes two parts: openvswitch-lc and agent daemon. The openvswitch-lc is designed based on the [OpenvSwitch](http://openvswitch.org) project. First, openvswitch-lc also supports the packetRemote action from the controller. Besides, the ovsd module in openvswitch-lc will collect and maintain an table for the belonging group through multicast message exchange, while the datapath kernel module are also modified to provides corresponding forwarding functions. 
+
+Specific agent daemon is run at every DCM to report its state (e.g., cpu utilization). Also, some DCM is designated as a DDCM for every group.
 
 ###Others
 A test platform to check the functions of grouping algorithm, large-scale performance, etc.
@@ -43,7 +47,7 @@ A test platform to check the functions of grouping algorithm, large-scale perfor
 * Start floodlight-lc  in CCM to receive PACKETIN msg, start the group manager daemons to collect upward statistics.
 
 ## How does it work?
-The floodlight-lc+openvswitch-lc cooperate as the basic control-datapath model in SDN. Based on them, we enhanced openvswitch-lc+agent to behave as DCM/DDCM, while floodlight-lc+daemons work as the CCM.
+Basically, the floodlight-lc+openvswitch-lc cooperate as the basic control-datapath model in SDN. Based on them, we enhanced openvswitch-lc+agent to behave as DCM/DDCM, while floodlight-lc+daemons work as the CCM. More details are discussed in the paper, e.g., the group maintain algorithm and the implementation technical issues.
 
 
 ##Documentation
