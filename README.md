@@ -20,7 +20,7 @@ git clone https://github.com/yeasy/lazyctrl.git
 ### CCM
 CCM directory includes the related code of a CCM module. CCM designs the SDN controller platform (floodlight-lc) based on the [floodlight](http://www.projectfloodlight.org/floodlight) project. floodlight-lc supports an enhanced version of [OpenFlow 1.0](http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf) protocol (We add code to support packetRemote action, which will encapsulate packet and send to remote end.). Besides, our app runs over floodlight-lc to handle cross-group traffic request. 
 
-Some daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs.
+Some daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs. The grouping generation is based on [METIS](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) project, and the gpmetis binary is suggested be compiled on your own platform.
 
 ### DCM
 DCM includes two parts: openvswitch-lc and agent daemon. The openvswitch-lc is designed based on the [OpenvSwitch](http://openvswitch.org) project. First, openvswitch-lc also supports the packetRemote action from the controller. Besides, the ovsd module in openvswitch-lc will collect and maintain an table for the belonging group through multicast message exchange, while the datapath kernel module are also modified to provides corresponding forwarding functions. 
@@ -36,7 +36,8 @@ A test platform to check the functions of grouping algorithm, large-scale perfor
 
 * Support  [OpenvSwitch](http://openvswitch.org).
 * Support [Floodlight Controller](http://www.projectfloodlight.org/floodlight).
-* Physical switches that support multi-cast.
+* Support [METIS](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview).
+* Physical switches that support IP multi-cast.
 * Server (as controller) can login into the servers (as edge switches, with at least 2 separate network interfaces) running OpenvSwtich via ssh without authorization (Need to put the public authorization key previously).
 
 ####Sample Testbed:
