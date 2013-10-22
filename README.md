@@ -70,7 +70,7 @@ Basically, the floodlight-lc+openvswitch-lc cooperate as the basic control-datap
 Besides the readme files, you can easily make the API document with python/java/c doc tools. Plenty comments in the code would also be helpful.
 
 ##Support
-Feel free to email to the authors. The project is planed to be community-supported soon.
+Feel free to email to the authors. The project is planned to be community-supported soon.
 
 
 ##Contributing
