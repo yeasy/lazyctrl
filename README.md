@@ -44,7 +44,7 @@ A test platform to test the performance of the grouping algorithm, workload and 
 * Server (as controller) can login into the servers (as edge switches, with at least 2 separate network interfaces) running OpenvSwtich via ssh without authorization (Need to put the public authorization key previously).
 
 ####Sample Testbed:
-![ScreenShot](Others/res/testbed.png)
+![ScreenShot](others/res/testbed.png)
 
 * Three edge switch instances (as DCM of two groups) are connected through a physical switch (IP communicable), and are connected to the CCM.
     * Each DCM should have at least connect to two subnets: control layer subnet and the datapath layer subnet.
