@@ -1,36 +1,37 @@
-The LazyCtrl project
+The LazyCtrl Project
 =================================
-*Self-adaptive performance-tunning control architecture for SDN networks*
+*A hybrid control plane design for large-scale cloud data centers.*
 
 * Version: 0.21
 * Authors: [Baohua Yang](mailto:baohyang@cn.ibm.com), [Kai Zheng](mailto:zhengkai@cn.ibm.com)
 * Homepage: <https://github.com/yeasy/lazyctrl>
 
-##Get Code
+## Download
+SSH:
 ```
 git clone git@github.com:yeasy/lazyctrl.git
 ```  
-or  
+Https:
 ```
 git clone https://github.com/yeasy/lazyctrl.git
 ```
 
-## Code Organization
+## Organization
 
-### CCM
-CCM directory includes the related code of a CCM module. CCM designs the SDN controller platform (floodlight-lc) based on the [floodlight](http://www.projectfloodlight.org/floodlight) project. floodlight-lc supports an enhanced version of [OpenFlow 1.0](http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf) protocol (We add code to support packetRemote action, which will encapsulate packet and send to remote end.). Besides, our app runs over floodlight-lc to handle cross-group traffic request. 
+### Central Control Modules
+The directory ```ccm```  contains essential centralized control modules that are responsible for handling flow-based centralized control, as well as local control group management, for LazyCtrl. 
 
-Some daemons are responsible to maintain the grouping in the networks, and also keep the communication between CCM and DCMs.
+* Central controller: Our implementation of the central controller in LazyCtrl is based on the [Floodight](http://www.projectfloodlight.org/floodlight) project, which we call ```floodlight-lc```.  We extend the basic [OpenFlow 1.0](http://archive.openflow.org/documents/openflow-spec-v1.0.0.pdf) protocol in ```floodlight-lc``` by introducing a function to support installing a new action *Encap*  for packet encapsulation and forwarding at edge switches. Besides, the central controller in LazyCtrl is only in charge of inter-group traffic flows.
+* Switch grouping management: Some daemons are provided to maintain switch grouping and updating in the network, as well as providing communication channels between the central controller and local control groups.
+* The grouping process is based on [METIS](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) project (version 5.0.2) and the gpmetis binary is suggested to be compiled on your own platform. 
 
-The grouping generation is based on [METIS](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) project, and the gpmetis binary is suggested be compiled on your own platform. Our implementation is based on metis 5.0.2.
+### Local Control Modules
+All the modules for local control in switch groups are contained under directory ```lcm```. Our implementation of flow switch (called ```openvswitch-lc```) is based on the [Open vSwitch](http://openvswitch.org) project and we extend Open vSwitch by implementing the *Encap* action. Besides, the *ovsd* module in ```openvswitch-lc``` will take the charge of maintaining L-FIB and G-FIB, while the *datapath* kernel module is also modified to provide essential forwarding functions.
 
-### DCM
-DCM includes two parts: openvswitch-lc and agent daemon. The openvswitch-lc is designed based on the [OpenvSwitch](http://openvswitch.org) project. First, openvswitch-lc also supports the packetRemote action from the controller. Besides, the ovsd module in openvswitch-lc will collect and maintain an table for the belonging group through multicast message exchange, while the datapath kernel module are also modified to provides corresponding forwarding functions. 
-
-Specific agent daemon is run at every DCM to report its state (e.g., cpu utilization). Also, some DCM is designated as a DDCM for every group.
+We also implement some agent daemons at every flow switch to report its state to the central controller. 
 
 ###Others
-A test platform to check the functions of grouping algorithm, large-scale performance, the source code of metis, etc.
+A test platform to test the performance of the grouping algorithm, workload and packet forwarding delay in LazyCtrl.
 
 ##Installation
 
