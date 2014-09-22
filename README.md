@@ -59,11 +59,11 @@ A test platform to test the performance of the grouping algorithm, workload and 
     * Start the *groupManager* daemon to update the grouping.
 * Test the deployment
     * Capture IP multicast message at each edge switch, confirming that they are broadcasting the LCG location/statistics information.
-    * Ping between two hosts in the same LCG, it will be handled by the L-FIB, hence no openflow message is generated and forwarded to the controller. The latency will be similar to direct transfer.
-    * Ping between two hosts in different LCGs, openflow messages are generated and forwarded to the controller and the the central controller will handle it using the G-FIB. The latency would be much higher as DCM has to talk with CCM. Besides, the packetRemote message will be sent to DCM.
+    * Ping between two hosts in the same LCG, it will be handled by the G-FIB, hence no openflow message is generated and forwarded to the controller. The latency will be similar to direct transfer.
+    * Ping between two hosts in different LCGs, openflow messages are generated and forwarded to the controller and the the central controller will handle it using the C-LIB. The latency would be much higher as the edge switch has to talk with the central controller. Besides, the *Encap* message will be sent to the edge switch.
 
 ## How does it work?
-Basically, the floodlight-lc+openvswitch-lc cooperate as the basic control-datapath model in SDN. Based on them, we enhanced openvswitch-lc+agent to behave as DCM/DDCM, while floodlight-lc+daemons work as the CCM. More details are discussed in the paper, e.g., the group maintain algorithm and the implementation technical issues.
+Basically, the ```floodlight-lc``` + ```openvswitch-lc``` cooperate as the basic control-datapath model in SDN. Based on them, we enhanced ```openvswitch-lc``` + agent to behave as local control groups, while ```floodlight-lc``` + daemons work as the central controller. More details, e.g., the group maintain algorithm and the implementation technical issues, are discussed in the paper.
 
 
 ##Documentation
