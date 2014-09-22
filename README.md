@@ -44,24 +44,23 @@ A test platform to test the performance of the grouping algorithm, workload and 
 * Server (as controller) can login into the servers (as edge switches, with at least 2 separate network interfaces) running OpenvSwtich via ssh without authorization (Need to put the public authorization key previously).
 
 ####Sample Testbed:
-![ScreenShot](others/res/testbed.png)
+![ScreenShot](others/res/testbed.jpg)
 
-* Three edge switch instances (as DCM of two groups) are connected through a physical switch (IP communicable), and are connected to the CCM.
-    * Each DCM should have at least connect to two subnets: control layer subnet and the datapath layer subnet.
-    * DCM can be installed at Linux based servers.
-    * DCM can login into CCM via ssh without manual authorization.
-* Deploy the DCM code at every edge switches (DCM 1 - DCM 3)
- *  following the [Installation documents](DCM/openvswitch-lc/INSTALL) inside. 
- *  Modify the address information as necessary. For example, the default control plane IP of DCM 1 is ```192.168.57.10```, while for DCM 2, the IP is ```192.168.57.11```. The datapath plane IP is set to ```10.0.0.0/8``` subnet.
- *  Start the agent.sh daemon at each DCM.
-* Setup CCM at the controller server.
-    * Start floodlight-lc  in CCM to receive PACKET_IN msg, see [Floodlight Getting Started](http://www.projectfloodlight.org/getting-started/). Basically, run ```ant; java -jar target/floodlight.jar``` if all dependencies are already satisfied.
+* Three edge switch instances (in two local control groups) are connected through a physical switch (IP network), and are connected to the central controller.
+    * Each edge switch has connections to two subnets: control layer subnet and the datapath layer subnet.
+    * Edge switches can be installed at Linux based servers.
+    * Edge switches can login to the central controller via ssh without manual authorization.
+* Deploy the local control modules at every edge switches following the [Installation Documents](lcm/openvswitch-lc/INSTALL) inside. 
+ *  Modify the address information as necessary. For example, the default control plane IP of edge switch #1 is ```192.168.57.10```, while for edge switch #2, the IP is ```192.168.57.11```. The datapath plane IP addresses are set to ```10.0.0.0/8``` subnet.
+ *  Start the agent.sh daemon at each edge switch.
+* Setup the central control modules at the central controller.
+    * Start floodlight-lc  in the central controller to receive PACKET_IN msg, see [Floodlight Getting Started](http://www.projectfloodlight.org/getting-started/). Run ```ant; java -jar target/floodlight.jar``` if all dependencies are already satisfied.
     * Start the collect_agent.sh daemon to collect upward statistics.
-    * Start the groupManager daemon to update the grouping.
+    * Start the *groupManager* daemon to update the grouping.
 * Test the deployment
-    * Capture IP multicast message at each DCM, find they are broadcasting the LCG location/statistics information.
-    * Ping between two hosts of the same LCG, it will be handled by the L-FIB, hence no to-controller openflow message is generated. The latency will be similar as directly transferring.
-    * Ping between two hosts of different LCG, the to-controller openflow message is generated, and the CCM will handle it using the G-FIB. The latency would be much higher as DCM has to talk with CCM. Besides, the packetRemote message will be sent to DCM.
+    * Capture IP multicast message at each edge switch, confirming that they are broadcasting the LCG location/statistics information.
+    * Ping between two hosts in the same LCG, it will be handled by the L-FIB, hence no openflow message is generated and forwarded to the controller. The latency will be similar to direct transfer.
+    * Ping between two hosts in different LCGs, openflow messages are generated and forwarded to the controller and the the central controller will handle it using the G-FIB. The latency would be much higher as DCM has to talk with CCM. Besides, the packetRemote message will be sent to DCM.
 
 ## How does it work?
 Basically, the floodlight-lc+openvswitch-lc cooperate as the basic control-datapath model in SDN. Based on them, we enhanced openvswitch-lc+agent to behave as DCM/DDCM, while floodlight-lc+daemons work as the CCM. More details are discussed in the paper, e.g., the group maintain algorithm and the implementation technical issues.
