@@ -44,7 +44,7 @@ A test platform to test the performance of the grouping algorithm, workload and 
 * Server (as controller) can login into the servers (as edge switches, with at least 2 separate network interfaces) running OpenvSwtich via ssh without authorization (Need to put the public authorization key previously).
 
 ###Sample Testbed:
-![ScreenShot](others/res/testbed.jpg)
+![ScreenShot](others/res/testbed.pdf)
 
 * Three edge switch instances (in two local control groups) are connected through a physical switch (IP network), and are connected to the central controller.
     * Each edge switch has connections to two subnets: control layer subnet and the datapath layer subnet.
